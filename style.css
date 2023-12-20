@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display";
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* overflow: hidden; */
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+
+  /* transform: rotate(180deg); */
+}
+
+.container {
+  max-width: 40rem;
+  max-height: 65rem;
+  background-color: #fff;
+  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.307);
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-content: center;
+
+  justify-content: center;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.box-2 {
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.img-box {
+}
+.img {
+  max-width: 100%;
+  height: 100%;
+}
+.info-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.info-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.info-text {
+  font-size: 1.5rem;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+}
+.price-box {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: end;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+  background-color: hsl(200, 100%, 95%);
+  border-radius: 8px;
+  gap: 1.5rem;
+}
+.icon {
+  height: 4rem;
+  justify-self: center;
+}
+.plan-box {
+}
+.plan-text {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.plan-price {
+  font-size: 1.3rem;
+}
+.price-box-link:link,
+.price-box-link:visited {
+  display: inline-block;
+  justify-self: end;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.price-box-link:hover,
+.price-box-link:active {
+  text-decoration: none;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 1.2rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.307);
+}
+.btn:hover,
+.btn:active {
+  background-color: hsl(225, 100%, 75%);
+}
+.btn-box-link:link,
+.btn-box-link:visited {
+  font-size: 1.3rem;
+  font-weight: 900;
+  align-self: center;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+.btn-box-link:hover,
+.btn-box-link:active {
+  color: hsl(223, 47%, 23%);
+}
